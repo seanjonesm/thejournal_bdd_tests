@@ -13,7 +13,7 @@ Scenarios to be tested are:
 - Load the business section
 - Verify that the top three business articles load and author name is populated
 
-**features\steps\step_definitions.py:** This is where the Gherkin test cases are linked with the underlying python code. All the required Given/When/Then scenarios are defined here. Definitions are parameterized where possible which will allow code reuse as the number of test cases grow. e.g. select a parameter driven category from navigation bar, test the top N articles on the page. 
+**features\steps\step_definitions.py:** This is where the Gherkin test cases are translated to python code. All the required Given/When/Then scenarios are defined here. Definitions are parameterized where possible which will allow code reuse as the number of test cases grow. e.g. select a parameter driven category from navigation bar, test the top N articles on the page. 
 
 **features\environment.py:** Behave looks for this file during runtime and is used for setting up and tearing down the test environment. Here it's used for defining the web driver object and launching/closing the web browser. 
 
