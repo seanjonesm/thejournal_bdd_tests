@@ -1,4 +1,4 @@
-Feature: Genesis Automation Challenge QA - TheJournal.ie
+Feature: Basic Tests - TheJournal.ie
 
 Scenario: Load Home Page
 When the user navigates to url "https://www.thejournal.ie"
@@ -15,7 +15,7 @@ Given the url "https://www.thejournal.ie" is currently open
 When the user selects "Business" from the navigation bar
 Then the "business" page loads successfully
 
-Scenario Outline: Verify that articlea load and author name is populated on all
+Scenario Outline: Verify that articles load and author name is populated
 Given the url "https://www.thejournal.ie/business" is currently open
 When the user selects article "<article_num>"
 Then the "article" page loads successfully
