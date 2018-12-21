@@ -18,10 +18,11 @@ pipeline {
                  }
             }
         }
-     
-    }
-       post { 
+        
+        post { 
         always { 
           junit 'reports/*'   
+     
+    
         }
 }
