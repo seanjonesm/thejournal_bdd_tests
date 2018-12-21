@@ -16,9 +16,11 @@ pipeline {
                         exit 0
                     }
                  }
-                
-                 junit 'reports/*'
             }
+        }
+        post { 
+        always { 
+          junit 'reports/*'   
         }
     }
 }
