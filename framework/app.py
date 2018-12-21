@@ -30,7 +30,7 @@ class App(object):
             self._log.Write('Error: ' + str(e))
             return False
         
-    # checks existence of element by class name
+    # checks existence of element by xpath
     def element_exists_by_xpath(self, xpath):
         try:
             element = WebDriverWait(self._driver, App._timeout).until(
