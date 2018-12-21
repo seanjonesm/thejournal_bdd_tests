@@ -10,7 +10,7 @@ In order to run the tests successfully, a python dev environment is required and
 **features\basic_tests.feature:** this is the feature file consisting of the test cases using natural language constructs based on the Gherkin syntax. The required test scenarios are outlined here and the steps for each are defined. 
 
 Scenarios to be tested are: 
-- Load The Journal.ie home page
+- Load the Journal.ie home page
 - Measure home page load time and ensure that it loads in under 3 seconds
 - Load the "Business" section
 - Verify that the top three business articles load and author name is populated
