@@ -1,7 +1,7 @@
 # thejournal_bdd_tests
 Automated test implementation of the basic website functionality of TheJournal.ie
 
-The technology chosen for this technical challenge was Python, the Selenium webdriver and a python module called 'behave' to implement Gherkin=style behavioral driven testing. Tests have been successfully run using Firefox but it should also work with Chrome. Test run automation was also implemented using a simple Jenkins pipeline script which checks out, runs the test cases and reports results. For screenshots of this, please see here: https://1drv.ms/w/s!ApNq4fx4xLAhfteQ4ZZA32jGR-k 
+The technology chosen for this technical challenge was python, selenium and a python module called 'behave' to implement Gherkin=style behavioral driven testing. Tests have been successfully run using Firefox but it should also work with Chrome. Test run automation was also implemented using a simple Jenkins pipeline script which checks out, runs the test cases and reports results. For screenshots of this, please see here: https://1drv.ms/w/s!ApNq4fx4xLAhfteQ4ZZA32jGR-k 
 
 In order to run the tests successfully, a python dev environment is required and the selenium and behave modules installed (e.g. using pip) 
 
