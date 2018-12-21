@@ -8,14 +8,8 @@ pipeline {
         }
         stage('run tests') {
             steps {
-                 script {
-                    try {
-                        bat 'behave features\\qatests.feature'
-                    } catch (err) {
-                        echo err
-                        exit 0
-                    }
-                 }
+                   bat 'behave features\\qatests.feature'
+                   }
             }
         }
         
