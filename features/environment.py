@@ -3,7 +3,6 @@ from selenium import webdriver
 
 # set up function that is called before any tests are run
 def before_all(context):
-
     if context.config.userdata['browser'] == 'firefox':
         app = App(webdriver.Firefox())
     context.app = app
