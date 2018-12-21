@@ -8,7 +8,13 @@ pipeline {
         }
         stage('run tests') {
             steps {
-                    bat 'behave features\\qatests.feature' || exit 0
+                 script {
+                    try {
+                        bat 'behave features\\qatests.feature'
+                    } catch (err) {
+                        echo err
+                    }
+                 }
             }
         }
         stage('archive report') {
