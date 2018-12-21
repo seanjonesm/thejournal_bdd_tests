@@ -12,8 +12,7 @@ pipeline {
                    }
             }
         }
-        
-        }
+
      post { 
         always { 
           junit 'reports/*'  
