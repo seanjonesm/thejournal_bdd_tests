@@ -15,11 +15,8 @@ pipeline {
                         echo err
                     }
                  }
-            }
-        }
-        stage('archive report') {
-            steps {
-                junit 'reports/*'
+                
+                 junit 'reports/*'
             }
         }
     }
