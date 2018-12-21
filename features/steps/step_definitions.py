@@ -9,6 +9,11 @@ def open_generic_page(context):
 def ensure_page_open(context, url):
     context.app.open(url)
 
+@given('the "{page}" page loads successfully')
+def verify_page_load_given(context, page):
+    if (page == 'home' or page == 'business' or page == 'article'):
+        context.app.verify_page_load()
+
 @when('the user navigates to url "{url}"')
 def navigate_to_page(context, url):
     context.app.open(url)
@@ -22,7 +27,7 @@ def select_article_by_number(context, a):
     context.app.select_article_by_number(int(a))
 
 @then('the "{page}" page loads successfully')
-def verify_page_load(context, page):
+def verify_page_load_then(context, page):
     if (page == 'home' or page == 'business' or page == 'article'):
         context.app.verify_page_load()
 
