@@ -105,5 +105,6 @@ venv.bak/
 
 # other files
 .idea/
+reports/
 error.log
 geckodriver.log
