@@ -20,7 +20,7 @@ framework\app.py: Consists of the App class to execute the test cases via the se
 
 behave.ini: used to configure behave. Currently used to configure preferred web browser and enable junit reporting
 
-Jenkinsfile: source-controlled pipeline script
+Jenkinsfile: source-controlled pipeline script. Simple script to do a git checkout, run a command to execute the feature file test cases and archive the results in junit format
 
 
 
