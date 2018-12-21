@@ -14,7 +14,7 @@ class App(object):
         super().__init__()
         self._driver = web_driver
         self._log = Log('error.log')
-        self._log.Write('Debug log created')
+        self._log.Write('Error log created')
         
     # navigates to a defined url
     def open(self, url):
