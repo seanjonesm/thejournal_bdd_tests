@@ -5,6 +5,8 @@ The technology chosen for this technical challenge was python, selenium and a py
 
 In order to run the tests successfully, a python dev environment is required and the __selenium__ and __behave__ modules installed (e.g. using pip) 
 
+**************************************************************************************************************************
+
 **features\basic_tests.feature:** this is the feature file consisting of the test cases using natural language constructs based on the Gherkin syntax. The required test scenarios are outlined here and the steps for each are defined. 
 
 Scenarios to be tested are: 
