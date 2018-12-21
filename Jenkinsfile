@@ -21,7 +21,9 @@ pipeline {
         
         post { 
         always { 
-          junit 'reports/*'   
+          junit 'reports/*'  
+        }
+        }
      
     
         }
