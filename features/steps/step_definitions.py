@@ -3,7 +3,7 @@ from behave import given, when, then
 
 @given('the web browser is currently open')
 def open_generic_page(context):
-    context.app.open('http://www.google.ie')
+    context.app.open('about:blank')
 
 @given('the url "{url}" is currently open')
 def ensure_page_open(context, url):
